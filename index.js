@@ -131,8 +131,8 @@ function setRandomOptions() {
     options.angle = Math.random() * 90;
     options.depth = 8 + Math.floor(Math.random() * 8);
     options.lineReductionSpeedKoef = 0.8 + 0.2 * Math.random();
-    options.leftLineReductionAcceleration = 0.7 + 0.3 * Math.random();
-    options.rightLineReductionAcceleration = 0.7 + 0.3 * Math.random();
+    options.leftLineReductionAcceleration = 0.8 + 0.2 * Math.random();
+    options.rightLineReductionAcceleration = 0.8 + 0.2 * Math.random();
 }
 
 function smothIncreaseDepth(toDepth, ms = 80) {
