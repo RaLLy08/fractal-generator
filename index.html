@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Casting</title>
+    <script type="text/javascript" src="Vector.js" defer></script>
+    <script type="text/javascript" src="index.js" defer></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div style="position: fixed; z-index: 9;">
+        <div>
+            <label for="angle">Angle: 
+            </label>
+            <input type="range" id="angle" min="0" max="90" value="30" step="1">
+            <span id="angleValue">30</span>
+        </div>
+        <div>
+            <label for="depth">Depth: 
+            </label>
+            <input type="range" id="depth" min="0" max="16" value="10" step="1">
+            <span id="depthValue">10</span>
+        </div>
+        <div>
+            <label for="lineReductionSpeedKoef" id="lineReductionSpeedKoefLabel"> Line Reduction Speed Koef:
+            </label>
+            <input type="range" id="lineReductionSpeedKoef" min="0" max="1" value="0.9" step="0.01">
+            <span id="lineReductionSpeedKoefValue">0.9</span>
+        </div>
+        <div>
+            <label for="left:lineReductionAccelerationKoef" id="left:lineReductionAccelerationKoefLabel"> Line Left Reduction Acceleration Koef:
+            </label>
+            <input type="range" id="left:lineReductionAccelerationKoef" min="0" max="1" value="0.9" step="0.01">
+            <span id="left:lineReductionAccelerationKoefValue">0.91</span>
+        </div>
+        <div>
+            <label for="right:lineReductionAccelerationKoef" id="right:lineReductionAccelerationKoefLabel"> Line Right Reduction Acceleration Koef:
+                </label>
+            <input type="range" id="right:lineReductionAccelerationKoef" min="0" max="1" value="1" step="0.01">
+            <span id="right:lineReductionAccelerationKoefValue">1</span>
+        </div>
+        <button style="height: 42px; font-size: 32px;" id="random">
+            <span>Random</span>
+        </button>
+    </div>
+
+
+    <canvas id="canvas" style="position: fixed; top: 50%; right:50%; transform: translate(50%, -50%); border: solid 1px"> </canvas>
+</body>
+</html>
